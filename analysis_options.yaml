@@ -1,0 +1,13 @@
+include: package:flutter_lints/flutter.yaml
+
+analyzer:
+  exclude:
+    - build/**
+    - _old_skeleton/**
+    - web/**
+    - android/**
+    - ios/**
+  strong-mode:
+    implicit-casts: false
+    implicit-dynamic: false
+
