@@ -31,7 +31,7 @@ class ExportService {
     await Share.shareXFiles(
       [XFile.fromData(bytes, mimeType: 'text/csv')],
       fileNameOverrides: ['cardioguard_health_log.csv'],
-      subject: 'CardioGuard health log (for clinical review)',
+      subject: 'LubDub health log (for clinical review)',
     );
   }
 

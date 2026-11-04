@@ -80,7 +80,7 @@ class AlarmService {
   Future<void> startWarning() async {
     _soft ??= buildSiren(lowHz: 660, highHz: 880, secondsPerTone: 0.6);
     await _start(_soft!, vibrate: false);
-    await notify('Are you OK?', 'CardioGuard noticed something unusual.');
+    await notify('Are you OK?', 'LubDub noticed something unusual.');
   }
 
   /// Loud siren with continuous vibration.

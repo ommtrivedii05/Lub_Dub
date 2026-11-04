@@ -11,7 +11,7 @@
     <uses-permission android:name="android.permission.WAKE_LOCK" />
     <!-- ESP32 hotspot and local hubs use plain ws:// without TLS. -->
     <application
-        android:label="CardioGuard"
+        android:label="LubDub"
         android:name="${applicationName}"
         android:icon="@mipmap/ic_launcher"
         android:usesCleartextTraffic="true">

@@ -3,7 +3,7 @@
 class AppStrings {
   AppStrings._();
 
-  static const appName = 'CardioGuard';
+  static const appName = 'LubDub';
   static const tagline = 'Your heart, watched over.';
   static const disclaimerFooter = 'Not a medical device. In an emergency, call 112.';
   static const offline = 'Offline - alerts still work';
@@ -225,10 +225,10 @@ class AppStrings {
     'Please read',
   ];
   static const onboardingBodies = <String>[
-    'CardioGuard watches your heart rhythm, oxygen, movement and falls together, and calls for help when it matters.',
+    'LubDub watches your heart rhythm, oxygen, movement and falls together, and calls for help when it matters.',
     'A chest band reads your ECG and movement. A wrist band reads heart rate and SpO2. An ESP32 hub combines both and sends them to this app over Wi-Fi.',
     'Location lets us send your position to contacts. Notifications and phone access let us raise alarms and place calls.',
-    'CardioGuard is not a medical device and does not diagnose. It cannot replace a doctor. In an emergency always call 112.',
+    'LubDub is not a medical device and does not diagnose. It cannot replace a doctor. In an emergency always call 112.',
   ];
   static const grantPermissions = 'Allow permissions';
   static const iUnderstand = 'I understand';

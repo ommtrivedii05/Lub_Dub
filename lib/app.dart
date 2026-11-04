@@ -9,14 +9,14 @@ import 'providers/device_providers.dart';
 import 'providers/settings_providers.dart';
 import 'services/alert_engine.dart';
 
-class CardioGuardApp extends ConsumerStatefulWidget {
-  const CardioGuardApp({super.key});
+class LubDubApp extends ConsumerStatefulWidget {
+  const LubDubApp({super.key});
 
   @override
-  ConsumerState<CardioGuardApp> createState() => _CardioGuardAppState();
+  ConsumerState<LubDubApp> createState() => _LubDubAppState();
 }
 
-class _CardioGuardAppState extends ConsumerState<CardioGuardApp> {
+class _LubDubAppState extends ConsumerState<LubDubApp> {
   @override
   void initState() {
     super.initState();

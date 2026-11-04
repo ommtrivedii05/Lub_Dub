@@ -1,4 +1,4 @@
-# CardioGuard (Phase 1: UI + mock data)
+# LubDub (Phase 1: UI + mock data)
 
 Mobile app of a multi-sensor-fusion cardiac risk monitoring and emergency response
 system. Phase 1 has no networking, ML, backend or ABHA calls: everything sits behind
