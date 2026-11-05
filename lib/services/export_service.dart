@@ -28,11 +28,11 @@ class ExportService {
 
   Future<void> shareCsv(List<HealthLogEntry> entries) async {
     final bytes = utf8.encode(buildCsv(entries));
-    await Share.shareXFiles(
-      [XFile.fromData(bytes, mimeType: 'text/csv')],
-      fileNameOverrides: ['cardioguard_health_log.csv'],
+    await SharePlus.instance.share(ShareParams(
+      files: [XFile.fromData(bytes, mimeType: 'text/csv')],
+      fileNameOverrides: ['lubdub_health_log.csv'],
       subject: 'LubDub health log (for clinical review)',
-    );
+    ));
   }
 
   Future<void> exportPdf(List<HealthLogEntry> entries) async {

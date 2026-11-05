@@ -44,8 +44,10 @@ class LocationService {
     try {
       if (!await ensurePermission()) return null;
       final p = await Geolocator.getCurrentPosition(
-        desiredAccuracy: LocationAccuracy.high,
-        timeLimit: const Duration(seconds: 8),
+        locationSettings: const LocationSettings(
+          accuracy: LocationAccuracy.high,
+          timeLimit: Duration(seconds: 8),
+        ),
       );
       return GeoPoint(p.latitude, p.longitude);
     } catch (_) {

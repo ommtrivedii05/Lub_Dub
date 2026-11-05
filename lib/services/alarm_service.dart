@@ -65,7 +65,7 @@ class AlarmService {
   Future<void> init() async {
     try {
       await _notifications.initialize(
-        const InitializationSettings(
+        settings: const InitializationSettings(
           android: AndroidInitializationSettings('@mipmap/ic_launcher'),
           iOS: DarwinInitializationSettings(),
         ),
@@ -123,10 +123,10 @@ class AlarmService {
     if (!_notificationsReady) return;
     try {
       await _notifications.show(
-        1,
-        title,
-        body,
-        const NotificationDetails(
+        id: 1,
+        title: title,
+        body: body,
+        notificationDetails: const NotificationDetails(
           android: AndroidNotificationDetails(
             'cardioguard_alerts',
             'Cardiac alerts',
