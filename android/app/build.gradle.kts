@@ -6,7 +6,7 @@ plugins {
 
 android {
     namespace = "com.cardioguard.cardio_guard"
-    compileSdk = flutter.compileSdkVersion
+    compileSdk = 37
     ndkVersion = flutter.ndkVersion
 
     compileOptions {
